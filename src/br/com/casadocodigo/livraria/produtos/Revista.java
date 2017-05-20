@@ -1,6 +1,8 @@
-package br.com.fishdev;
+package br.com.casadocodigo.livraria.produtos;
 
-public class Revista {
+import br.com.casadocodigo.livraria.Editora;
+
+public class Revista implements Produto, Promocional {
 
 	private String nome;
 	private String descricao;
@@ -39,6 +41,7 @@ public class Revista {
 		this.editora = editora;
 	}
 
+	@Override
 	public boolean aplicaDescontoDe(double porcentagem) {
 		if (porcentagem > 0.1) {
 			return false;

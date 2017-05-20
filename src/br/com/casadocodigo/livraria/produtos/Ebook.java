@@ -1,6 +1,8 @@
-package br.com.fishdev;
+package br.com.casadocodigo.livraria.produtos;
 
-public class Ebook extends Livro {
+import br.com.casadocodigo.livraria.Autor;
+
+public class Ebook extends Livro implements Promocional {
 
 	private String waterMark;
 

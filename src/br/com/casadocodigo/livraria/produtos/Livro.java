@@ -1,6 +1,8 @@
-package br.com.fishdev;
+package br.com.casadocodigo.livraria.produtos;
 
-public abstract class Livro {
+import br.com.casadocodigo.livraria.Autor;
+
+public abstract class Livro implements Produto {
 	private String nome;
 	private String descricao;
 	private double valor;
@@ -12,7 +14,7 @@ public abstract class Livro {
 		this.autor = autor;
 	}
 
-	void mostrarDetalhes() {
+	public void mostrarDetalhes() {
 		System.out.println("Mostrando detalhes do livro ");
 		System.out.println("Nome: " + this.nome);
 		System.out.println("Descrição: " + this.descricao);
@@ -26,8 +28,6 @@ public abstract class Livro {
 		System.out.println("--");
 	}
 
-	public abstract boolean aplicaDescontoDe(double porcentagem);
-	
 	boolean temAutor() {
 		return this.autor != null;
 	}

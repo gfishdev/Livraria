@@ -1,4 +1,4 @@
-package br.com.fishdev;
+package br.com.casadocodigo.livraria;
 
 public class Editora {
 
